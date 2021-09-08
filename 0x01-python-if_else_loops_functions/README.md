@@ -25,11 +25,11 @@
 
 #### 0. [Positive anything is better than negative nothing](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x01-python-if_else_loops_functions/0-positive_or_negative.py)
 
-	    This program will assign a random signed number to the variable number each time it is executed. Complete [this source code](https://alx-intranet.hbtn.io/rltoken/rkvoXPA-lS3TAaemM9sChg) in order to print whether the number stored in the variable number is positive or negative.
+	This program will assign a random signed number to the variable number each time it is executed. Complete [this source code](https://alx-intranet.hbtn.io/rltoken/rkvoXPA-lS3TAaemM9sChg) in order to print whether the number stored in the variable number is positive or negative.
 
-		    The variable number will store a different value every time you will run this program
-		    You don’t have to understand what import, random. randint do. Please do not touch this code
-		    The output of the program should be:
+		The variable number will store a different value every time you will run this program
+	    You don’t have to understand what import, random. randint do. Please do not touch this code
+	    The output of the program should be:
 			The number, followed by
 			    if the number is greater than 0: is positive
 			    if the number is 0: is zero
@@ -40,8 +40,8 @@
 
 	This program will assign a random signed number to the variable number each time it is executed. Complete [this source code](https://alx-intranet.hbtn.io/rltoken/hU682hcMxVchqWAcmh32tA) in order to print the last digit of the number stored in the variable number.
 
-	    The variable number will store a different value every time you will run this program
-	    You don’t have to understand what import, random.randint do. Please do not touch this code. This line should not change: number = random.randint(-10000, 10000)
+		The variable number will store a different value every time you will run this program
+		You don’t have to understand what import, random.randint do. Please do not touch this code. This line should not change: number = random.randint(-10000, 10000)
 	    The output of the program should be:
 		The string Last digit of, followed by
 		the number, followed by
@@ -82,15 +82,15 @@
 
 #### 5. [00...99](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x01-python-if_else_loops_functions/5-print_comb2.py)
 
-	    Write a program that prints numbers from 0 to 99.
+	Write a program that prints numbers from 0 to 99.
 
-		    Numbers must be separated by ,, followed by a space
-		    Numbers should be printed in ascending order, with two digits
-		    The last number should be followed by a new line
-		    You can only use no more than 2 print functions with string format
-		    You can only use one loop in your code
-		    You are not allowed to store numbers or strings in a variable
-		    You are not allowed to import any module
+	    Numbers must be separated by ,, followed by a space
+	    Numbers should be printed in ascending order, with two digits
+	    The last number should be followed by a new line
+	    You can only use no more than 2 print functions with string format
+	    You can only use one loop in your code
+	    You are not allowed to store numbers or strings in a variable
+	    You are not allowed to import any module
 
 #### 6. [Inventing is a combination of brains and materials. The more brains you use, the less material you need](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x01-python-if_else_loops_functions/6-print_comb3.py)
 	    
