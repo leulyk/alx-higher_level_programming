@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import calculation_1 as calc
+import calculator_1 as calc
 from sys import argv, exit
 
 if __name__ == "__main__":
