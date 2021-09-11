@@ -164,6 +164,11 @@
 
 #### 13. [Insert in a sorted linked list](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x01-python-if_else_loops_functions/13-insert_number.c)
 
+    Technical interview preparation:
+
+            You are not allowed to google anything
+            Whiteboard first
+
 	Write a function in C that inserts a number into a sorted singly linked list.
 
 	    Prototype: listint_t *insert_node(listint_t **head, int number);
