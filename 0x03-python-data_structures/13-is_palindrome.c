@@ -18,7 +18,7 @@ int is_palindrome(listint_t **head)
 	listint_t *new_iterator;
 
 	if (current == NULL)
-		return (0);
+		return (1);
 	while (current)
 	{
 		add_nodeint(&new_head, current->n);
