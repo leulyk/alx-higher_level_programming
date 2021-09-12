@@ -13,50 +13,36 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *new_head = NULL;
 	listint_t *current = *head;
-	listint_t *new_iterator;
+    int i = 0, length = 0, *list;
 
 	if (current == NULL)
 		return (1);
 	while (current)
 	{
-		add_nodeint(&new_head, current->n);
 		current = current->next;
+        length++;
 	}
-	current = *head;
-	new_iterator = new_head;
-	while (current && new_iterator)
-	{
-		if (current->n != new_iterator->n)
+	list = malloc(sizeof(int) * length);
+	if (list == NULL)
 			return (0);
+	current = *head;
+	i = 0;
+	while (current)
+	{
+		list[i] = current->n;
 		current = current->next;
-		new_iterator = new_iterator->next;
+		i++;
 	}
-
-	free_listint(new_head);
+	for (i = 0; i <= (length - 1) / 2; ++i)
+	{
+		if (list[i] != list[length - 1 - i])
+        {
+			free(list);
+			return (0);
+        }
+	}
+	free(list);
 
 	return (1);
-}
-
-/**
- * add_nodeint - add a new node to the beginning of a singly linked list
- *
- * @h: pointer to the head node
- * @n: integer element to assign to the new node
- *
- * Return: address of the new element, NULL if it fails
- */
-listint_t *add_nodeint(listint_t **h, const int n)
-{
-	listint_t *new_node;
-
-	new_node = malloc(sizeof(listint_t));
-	if (!new_node)
-		return (0);
-	new_node->n = n;
-	new_node->next = *h;
-	*h = new_node;
-
-	return (new_node);
 }
