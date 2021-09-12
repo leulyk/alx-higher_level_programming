@@ -14,18 +14,18 @@
 int is_palindrome(listint_t **head)
 {
 	listint_t *current = *head;
-    int i = 0, length = 0, *list;
+	int i = 0, length = 0, *list;
 
 	if (current == NULL)
 		return (1);
 	while (current)
 	{
 		current = current->next;
-        length++;
+		length++;
 	}
 	list = malloc(sizeof(int) * length);
 	if (list == NULL)
-			return (0);
+		return (0);
 	current = *head;
 	i = 0;
 	while (current)
@@ -37,10 +37,10 @@ int is_palindrome(listint_t **head)
 	for (i = 0; i <= (length - 1) / 2; ++i)
 	{
 		if (list[i] != list[length - 1 - i])
-        {
+		{
 			free(list);
 			return (0);
-        }
+		}
 	}
 	free(list);
 
