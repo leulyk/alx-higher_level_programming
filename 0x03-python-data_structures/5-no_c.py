@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def no_c(my_string):
     lstr = list(my_string)
     new_str = ''
