@@ -40,9 +40,9 @@ int is_palindrome_rec(listint_t **left, listint_t *right)
  */
 int is_palindrome(listint_t **head)
 {
-		listint_t *current = *head;
+	listint_t *current = *head;
 
-		if (current == NULL)
-			return (1);
-		return (is_palindrome_rec(&current, current));
+	if (current == NULL)
+		return (1);
+	return (is_palindrome_rec(&current, current));
 }
