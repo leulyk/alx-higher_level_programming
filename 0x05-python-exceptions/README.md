@@ -1,4 +1,4 @@
-# [0x05. Python - Exceptions]()
+# [0x05. Python - Exceptions](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x05-python_exceptions)
 
 ## Learning Objectives
 
