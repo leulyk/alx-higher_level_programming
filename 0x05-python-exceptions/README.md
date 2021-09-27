@@ -14,7 +14,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 
 ## Mandatory Tasks
 
-### 0. [Safe list printing]()
+### 0. [Safe list printing](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/0-safe_print_list.py)
 
 	Write a function that prints x elements of a list.
 
@@ -28,7 +28,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 	    You are not allowed to import any module
 	    You are not allowed to use len()
 
-### 1. [Safe printing of integers list]()
+### 1. [Safe printing of integers list](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py)
 
 	Write a function that prints an integer with "{:d}".format().
 
@@ -42,7 +42,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 	    You are not allowed to import any module
 	    You are not allowed to use type()
 
-### 2. [Print and count integers]()
+### 2. [Print and count integers](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_list_integers.py)
 
 	Write a function that prints the first x elements of a list and only integers.
 
@@ -57,7 +57,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 	    You are not allowed to import any module
 	    You are not allowed to use len()
 
-### 3. [Integers division with debug]()
+### 3. [Integers division with debug](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/3-safe_print_division.py)
 
 	Write a function that divides 2 integers and prints the result.
 
@@ -69,7 +69,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 	    You have to use "{}".format() to print the result
 	    You are not allowed to import any module
 
-### 4. [Divide a list]()
+### 4. [Divide a list](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/4-list_division.py)
 
 	Write a function that divides element by element 2 lists.
 
@@ -87,14 +87,14 @@ At the end of this project, you are expected to be able to explain to anyone:
 	    You have to use try: / except: / finally:
 	    You are not allowed to import any module
 
-### 5. [Raise exception]()
+### 5. [Raise exception](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py)
 
 	Write a function that raises a type exception.
 
 	    Prototype: def raise_exception():
 	    You are not allowed to import any module
 
-### 6. [Raise a message]()
+### 6. [Raise a message](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/6-raise_exception_msg.py)
 
 	Write a function that raises a name exception with a message.
 
@@ -103,7 +103,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 
 ## Advanced Tasks
 
-### 7. [Safe integer print with error message]()
+### 7. [Safe integer print with error message](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/100-safe_print_integer_err.py)
 
 	Write a function that prints an integer.
 
@@ -116,7 +116,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 	    You have to use "{:d}".format() to print as integer
 	    You are not allowed to use type()
 
-### 8. [Safe function]()
+### 8. [Safe function](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/101-safe_function.py)
 
 	Write a function that executes a function safely.
 
@@ -126,7 +126,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 	    Otherwise, returns None if something happens during the function and prints in stderr the error precede by Exception:
 	    You have to use try: / except:
 
-### 9. [ByteCode -> Python #4]()
+### 9. [ByteCode -> Python #4](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/102-magic_calculation.py)
 
 	Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
 
@@ -185,7 +185,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 	 13     >>  103 LOAD_FAST                2 (result)
 		    106 RETURN_VALUE
 
-### 10. [CPython #2: PyFloatObject]()
+### 10. [CPython #2: PyFloatObject](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x05-python-exceptions/103-python.c)
 
 	Create three C functions that print some basic info about Python lists, Python bytes an Python float objects.
 
