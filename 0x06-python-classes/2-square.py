@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+"""
+    This module is Task 2 of the project '0x06. Python -
+    Classes and Objects which is a continuation of task 1
+    and adds validation for the private instance attribute
+"""
+
+
 class Square:
     """ A Square class """
     def __init__(self, size=0):
