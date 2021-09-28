@@ -15,8 +15,8 @@ class Square:
         Args:
             __size: size of the square
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """ compute the area of a square
@@ -35,6 +35,16 @@ class Square:
         """
         return self.__size
 
+    @property
+    def position(self):
+        """ getter method for the __position private
+            instance attribute
+
+        Return:
+            __position
+        """
+        return self.__position
+
     @size.setter
     def size(self, value):
         """ setter method for the __size private instance
@@ -46,25 +56,18 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    @property
-    def position(self):
-        """ getter method for the __position private
-            instance attribute
-
-        Return:
-            __position
-        """
-        return self.__position
-
     @position.setter
     def position(self, value):
         """ setter method for the __position private
             instance attribute
         """
-        if (not isinstance(value, tuple)) or len(value) != 2 \
-                or (value[0] < 0 or value[1] < 0):
-            raise TypeError("position must be a tuple \
-                            of two positive integers")
+        errormsg = "position must be a tuple of two positive integers"
+        if (not isinstance(value, tuple)) or len(value) != 2:
+            raise TypeError(errormsg)
+        if not isinstance(value[0], int) or not isinstance(value[1], int):
+            raise TypeError(errormsg)
+        if value[0] < 0 or value[1] < 0:
+            raise TypeError(errormsg)
         self.__position = value
 
     def my_print(self):
