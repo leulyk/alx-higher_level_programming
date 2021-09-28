@@ -74,15 +74,10 @@ class Square:
         """ prints a square using the character #
             if size is 0, prints a blank line
         """
-        if self.__size == 0 and self.__position[0] == 0:
+        if self.__size == 0:
             print()
-            return
-        for i in range(self.__size + self.__position[1]):
-            if self.__position[1] - i > 0:
-                print("")
-                continue
-            for k in range(self.__position[0]):
-                print(" ", end="")
-            for j in range(self.__size):
-                print("#", end="")
-            print()
+        else:
+            for i in range(self.__position[1]):
+                print()
+            for k in range(self.__size):
+                print("{}{}".format(" "*self.__position[0], "#"*self.__size))
