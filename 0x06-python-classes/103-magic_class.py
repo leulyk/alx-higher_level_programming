@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-import math
 
 """ Task 10 of 'Project 0x06. Python - Classes and Objects """
+
+from math import pi
 
 
 class MagicClass:
