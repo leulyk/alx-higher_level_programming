@@ -86,9 +86,7 @@ class Square:
     def __str__(self):
         """ print an instance of Square """
         squarestr = ""
-        if self.__size == 0:
-            squarestr += "\n"
-        else:
+        if self.__size > 0:
             for i in range(self.__position[1]):
                 squarestr += "\n"
             for j in range(self.__size):
