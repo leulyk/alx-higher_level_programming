@@ -1,4 +1,4 @@
-# [0x06. Python - Classes and Objects]
+# [0x06. Python - Classes and Objects](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x06-python-classes)
 
 ## Learning Objectives
 
@@ -26,13 +26,13 @@
 
 ## Mandatory Tasks
 
-### 0. [My first square]()
+### 0. [My first square](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/0-square.py)
 
         Write an empty class Square that defines a square:
 
             You are not allowed to import any module
 
-### 1. [Square with size]()
+### 1. [Square with size](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/1-square.py)
 
         Write a class Square that defines a square by: (based on 0-square.py)
 
@@ -46,7 +46,7 @@
 
         The size of a square is crucial for a square, many things depend of it (area computation, etc.), so you, as class builder, must control the type and value of this attribute. One way to have the control is to keep it privately. You will see in next tasks how to get, update and validate the size value.
 
-### 2. [Size validation]()
+### 2. [Size validation](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/2-square.py)
 
         Write a class Square that defines a square by: (based on 1-square.py)
 
@@ -56,7 +56,7 @@
                 if size is less than 0, raise a ValueError exception with the message size must be >= 0
             You are not allowed to import any module
 
-### 3. [Area of a square]()
+### 3. [Area of a square](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/3-square.py)
 
         Write a class Square that defines a square by: (based on 2-square.py)
 
@@ -67,7 +67,7 @@
             Public instance method: def area(self): that returns the current square area
             You are not allowed to import any module
 
-### 4. [Access and update private attributes]()
+### 4. [Access and update private attributes](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/4-square.py)
 
         Write a class Square that defines a square by: (based on 3-square.py)
 
@@ -86,7 +86,7 @@
 
         Reminder: size is a private attribute. We did that to make sure we control the type and value. Getter and setter methods are not 100% Python, but more OOP. With them, you will be able to validate the assignment of a private attribute and also define how getting the attribute value will be available from outside - by copy? by assignment? etc. Also, adding type/value validation in the setter will centralize the logic, since you will do it in only one place.
 
-### 5. [Printing a square]()
+### 5. [Printing a square](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/5-square.py)
 
         Write a class Square that defines a square by: (based on 4-square.py)
 
@@ -101,7 +101,7 @@
                 if size is equal to 0, print an empty line
             You are not allowed to import any module
 
-### 6. [Coordinates of a square]()
+### 6. [Coordinates of a square](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/6-square.py)
 
         Write a class Square that defines a square by: (based on 5-square.py)
 
@@ -123,7 +123,7 @@
 
 ## Advanced Tasks
 
-### 7. [Singly linked list]()
+### 7. [Singly linked list](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/100-singly_linked_list.py)
 
         Write a class Node that defines a node of a singly linked list by:
 
@@ -147,7 +147,7 @@
             Public instance method: def sorted_insert(self, value): that inserts a new Node into the correct sorted position in the list (increasing order)
             You are not allowed to import any module
 
-### 8. [Print Square instance]()
+### 8. [Print Square instance](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/101-square.py)
 
         Write a class Square that defines a square by: (based on 6-square.py)
 
@@ -168,7 +168,7 @@
             Printing a Square instance should have the same behavior as my_print()
             You are not allowed to import any module
 
-### 9. [Compare two squares]()
+### 9. [Compare two squares](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/102-square.py)
 
         Write a class Square that defines a square by: (based on 4-square.py)
 
@@ -182,7 +182,7 @@
             Square instance can answer to comparators: ==, !=, >, >=, < and <= based on the square area
             You are not allowed to import any module
 
-### 10. [ByteCode -> Python #5]()
+### 10. [ByteCode -> Python #5](https://github.com/leulyk/alx-higher_level_programming/blob/main/0x06-python-classes/103-magic_class.py)
 
         Write the Python class MagicClass that does exactly the same as the following Python bytecode:
 
