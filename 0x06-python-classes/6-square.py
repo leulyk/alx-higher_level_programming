@@ -73,6 +73,8 @@ class Square:
     def my_print(self):
         """ prints a square using the character #
             if size is 0, prints a blank line
+            prints the square on the coordinate specified by position by
+            using blank space, if position[1] > 0 don't use space
         """
         if self.__size == 0:
             print()
