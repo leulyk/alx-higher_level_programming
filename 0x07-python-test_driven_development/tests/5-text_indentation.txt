@@ -1,0 +1,61 @@
+
+# 5-text_indentation.txt
+================================================================================
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Non-string argument and no argument
+================================================================================
+
+>>> text_indentation()
+Traceback (most recent call last):
+        ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+>>> text_indentation(4)
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+>>> text_indentation(32.8)
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+>>> text_indentation([1, 2, 3])
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+>>> text_indentation((1, 2, 3))
+Traceback (most recent call last):
+        ...
+TypeError: text must be a string
+
+Miscellaneous cases
+================================================================================
+
+>>> text_indentation("Message: Hello, world.")
+Message:
+<BLANKLINE>
+Hello, world.
+<BLANKLINE>
+
+>>> text_indentation("     Message:      How are you doing?         I am really fine.     ")
+Message:
+<BLANKLINE>
+How are you doing?
+<BLANKLINE>
+I am really fine.
+<BLANKLINE>
+
+>>> text_indentation("   . :    ?")
+.
+<BLANKLINE>
+:
+<BLANKLINE>
+?
+<BLANKLINE>
+
+>>> text_indentation("Lorem: ipsum? dolor")
+Lorem:
+<BLANKLINE>
+ipsum?
+<BLANKLINE>
+dolor
