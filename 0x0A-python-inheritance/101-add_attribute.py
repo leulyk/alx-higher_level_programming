@@ -7,4 +7,7 @@
 
 def add_attribute(obj, attr, val):
     """ adds an attribute to an object at runtime """
-    setattr(obj, attr, val)
+    if hasattr(obj, "__dict__"):
+        setattr(obj, attr, val)
+    else:
+        raise TypeError("can't add new attribute")
