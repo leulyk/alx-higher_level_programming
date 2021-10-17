@@ -24,3 +24,12 @@
 - ### [Classes and Objects](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x06-python-classes)
 
 - ### [Test driven development](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x07-python-test_driven_development)
+
+- ### [More Classes and Objects](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x08-python-more_classes)
+
+- ### [Everything is Object](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x09-python-everything_is_object)
+
+- ### [Inheritance](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0A-python-inheritance)
+
+- ### [Python I/O](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0B-python-input_output)
+
