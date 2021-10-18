@@ -75,7 +75,7 @@ class Base:
         file_name = "{}.csv".format(cls.__name__)
         try:
             with open(file_name, mode="r", encoding="utf-8") as file:
-                reader = csv.DictReader(file, delimiter=',',
+                reader = csv.reader(file, delimiter=',',
                                         lineterminator='\n')
                 if file_name == "Rectangle.csv":
                     columns = ['id', 'width', 'height', 'x', 'y']
@@ -83,7 +83,12 @@ class Base:
                     columns = ['id', 'size', 'x', 'y']
                 instances = []
                 for row in reader:
-                    print(row)
+                    dictionary = {}
+                    count = 0
+                    for i in row:
+                        dictionary[columns[count]] = int(i)
+                        count += 1
+                    instances.append(cls.create(**dictionary))
                 return instances
         except IOError:
             return []
