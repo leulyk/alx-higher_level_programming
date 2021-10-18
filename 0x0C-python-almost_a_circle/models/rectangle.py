@@ -102,7 +102,7 @@ class Rectangle(Base):
         if args and args != []:
             keys = list(self.__dict__)
             for i in range(len(args)):
-                self.__dict__[keys[i]] = args[i]
+                setattr(self, keys[i], args[i])
         elif kwargs:
             for key, value in kwargs.items():
                 setattr(self, key, value)
