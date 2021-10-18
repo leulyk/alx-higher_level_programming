@@ -36,9 +36,8 @@ class Base:
         new_list = []
         with open("{}.json".format(cls.__name__), "w") as file:
             for obj in list_obj:
-                if hasattr(obj, '__dict__'):
-                    new_list.append(obj.to_dictionary())
-            file.write(str(new_list))
+                new_list.append(obj.to_dictionary())
+            file.write(cls.to_json_string(new_list))
 
     @staticmethod
     def from_json_string(json_string):
