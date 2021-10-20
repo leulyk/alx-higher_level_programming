@@ -76,7 +76,7 @@ class Base:
         try:
             with open(file_name, mode="r", encoding="utf-8") as file:
                 reader = csv.reader(file, delimiter=',',
-                                        lineterminator='\n')
+                                    lineterminator='\n')
                 if file_name == "Rectangle.csv":
                     columns = ['id', 'width', 'height', 'x', 'y']
                 else:
