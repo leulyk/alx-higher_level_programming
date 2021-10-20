@@ -6,24 +6,26 @@
 
 import json
 import csv
+import turtle
+import random
 
 
 class Base:
     """ Base class for all other classes in the project whose aim is to
         manage id attribute of all future classes and avoid duplicates
     """
-    __nb_objects = 0
+    __nb_shapeects = 0
 
     def __init__(self, id=None):
         """ constructor for the base class
         Args:
-            id (int): id of object
+            id (int): id of shapeect
         """
         if id is not None:
             self.id = id
         else:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+            Base.__nb_shapeects += 1
+            self.id = Base.__nb_shapeects
 
     @staticmethod
     def to_json_string(list_dictionaries):
@@ -33,12 +35,12 @@ class Base:
         return json.dumps(list_dictionaries)
 
     @classmethod
-    def save_to_file(cls, list_obj):
-        """ writes a JSON string representation of a list of objects """
+    def save_to_file(cls, list_shape):
+        """ writes a JSON string representation of a list of shapeects """
         new_list = []
         with open("{}.json".format(cls.__name__), "w") as file:
-            for obj in list_obj:
-                new_list.append(obj.to_dictionary())
+            for shape in list_obj:
+                new_list.append(shape.to_dictionary())
             file.write(cls.to_json_string(new_list))
 
     @staticmethod
@@ -98,8 +100,8 @@ class Base:
             return []
 
     @classmethod
-    def save_to_file_csv(cls, list_obj):
-        """ writes a CSV reprentation of a list of objects to a file """
+    def save_to_file_csv(cls, list_shape):
+        """ writes a CSV reprentation of a list of shapeects to a file """
         file_name = "{}.csv".format(cls.__name__)
         with open(file_name, mode="w", encoding="utf-8") as file:
             if file_name == "Rectangle.csv":
@@ -108,5 +110,39 @@ class Base:
                 columns = ['id', 'size', 'x', 'y']
             writer = csv.DictWriter(file, fieldnames=columns, delimiter=",",
                                     lineterminator="\n")
-            for obj in list_obj:
-                writer.writerow(obj.to_dictionary())
+            for shape in list_obj:
+                writer.writerow(shape.to_dictionary())
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """ draw rectangles and squares using turtle graphics """
+        window = turtle.getscreen()
+        t = turtle.Turtle()
+
+        if isinstance(list_rectangles, list):
+            for rectangle in list_rectangles:
+                Base.draw_shape(rectangle, t)
+        if isinstance(list_rectangles, list):
+            for square in list_squares:
+                Base.draw_shape(square, t)
+        window.exitonclick()
+
+    @staticmethod
+    def draw_shape(shape, t):
+        if shape is None:
+            return
+        colors = ['black', 'red', 'green', 'yellow', 'cyan', 'magenta', 'gray',
+                  'purple', 'orange', 'brown']
+        t.goto(shape.x, shape.y)
+        t.pendown()
+        t.fillcolor(random.choice(colors))
+        t.begin_fill()
+        t.forward(shape.width)
+        t.right(90)
+        t.forward(shape.height)
+        t.right(90)
+        t.forward(shape.width)
+        t.right(90)
+        t.forward(shape.height)
+        t.end_fill()
+        t.penup()
