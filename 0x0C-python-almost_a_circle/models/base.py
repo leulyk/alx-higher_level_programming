@@ -35,7 +35,7 @@ class Base:
         return json.dumps(list_dictionaries)
 
     @classmethod
-    def save_to_file(cls, list_shape):
+    def save_to_file(cls, list_obj):
         """ writes a JSON string representation of a list of objects """
         new_list = []
         with open("{}.json".format(cls.__name__), "w") as file:
@@ -100,7 +100,7 @@ class Base:
             return []
 
     @classmethod
-    def save_to_file_csv(cls, list_shape):
+    def save_to_file_csv(cls, list_obj):
         """ writes a CSV reprentation of a list of shapes to a file """
         file_name = "{}.csv".format(cls.__name__)
         with open(file_name, mode="w", encoding="utf-8") as file:
