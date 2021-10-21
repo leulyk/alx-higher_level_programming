@@ -14,7 +14,7 @@ class Base:
     """ Base class for all other classes in the project whose aim is to
         manage id attribute of all future classes and avoid duplicates
     """
-    __nb_shapeects = 0
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """ constructor for the base class
@@ -24,8 +24,8 @@ class Base:
         if id is not None:
             self.id = id
         else:
-            Base.__nb_shapeects += 1
-            self.id = Base.__nb_shapeects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
@@ -36,7 +36,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_shape):
-        """ writes a JSON string representation of a list of shapeects """
+        """ writes a JSON string representation of a list of objects """
         new_list = []
         with open("{}.json".format(cls.__name__), "w") as file:
             for shape in list_obj:
@@ -101,7 +101,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_shape):
-        """ writes a CSV reprentation of a list of shapeects to a file """
+        """ writes a CSV reprentation of a list of shapes to a file """
         file_name = "{}.csv".format(cls.__name__)
         with open(file_name, mode="w", encoding="utf-8") as file:
             if file_name == "Rectangle.csv":
