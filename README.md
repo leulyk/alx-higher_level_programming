@@ -5,7 +5,7 @@
 <img src="https://blog.holbertonschool.com/wp-content/uploads/2019/04/instagram_feed180.jpg" width = "150" height="150"/>
 </p>
 
-> This repository contains solutions to projects on high level programming using Python on the ALX Software Engineering program. It also contains technical interview preparation exercises in C.
+> This repository contains solutions to projects on high level programming using Python and SQL on the ALX Software Engineering program. It also contains a few technical interview preparation exercises in C.
 
 ## Projects
 
@@ -34,3 +34,7 @@
 - ### [Python I/O](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0B-python-input_output)
 
 - ### [Almost a circle](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0C-python-almost_a_circle)
+
+- ### [SQL introduction #1](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0D-SQL_introduction)
+
+- ### [SQL introduction #2](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0E-SQL_more_queries)
