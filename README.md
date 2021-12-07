@@ -17,9 +17,9 @@
 
 - ### [Data structures: Lists, Tuples](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x03-python-data_structures)
 
-- ### [More Data structures: Set, Dictionary](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x04-python_more_data_structures)
+- ### [More Data structures: Set, Dictionary](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x04-python-more_data_structures)
 
-- ### [Exceptions](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x05-python_exceptions)
+- ### [Exceptions](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x05-python-exceptions)
 
 - ### [Classes and Objects](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x06-python-classes)
 
