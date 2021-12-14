@@ -5,14 +5,7 @@ const myObject = {
 };
 console.log(myObject);
 
-/*
-Object.defineProperty(myObject, 'incr', {
-  value: function () {
-    myObject.value++;
-  }
-});
-*/
-
+myObject.type = typeof (myObject);
 myObject.incr = function incr () {
   myObject.value++;
 };
