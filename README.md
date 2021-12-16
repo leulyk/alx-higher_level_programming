@@ -38,3 +38,9 @@
 - ### [SQL introduction #1](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0D-SQL_introduction)
 
 - ### [SQL introduction #2](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0E-SQL_more_queries)
+
+- ### [JavaScript introduction](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x12-javascript-warm_up)
+
+- ### [JavaScript: objects, scopes & closures](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x13-javascript_objects_scopes_closures)
+
+- ### [Object relational mapping with Python](https://github.com/leulyk/alx-higher_level_programming/tree/main/0x0F-python-object_relational_mapping)
