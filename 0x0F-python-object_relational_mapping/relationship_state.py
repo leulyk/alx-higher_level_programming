@@ -5,7 +5,7 @@
 """
 
 from sqlalchemy import String, Column, Integer
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base()
 
@@ -18,4 +18,4 @@ class State(Base):
     __tablename__ = "states"
     id = Column('id', Integer(), primary_key=True)
     name = Column('name', String(128), nullable=False)
-    cities = relationship('City')
+    cities = relationship("City", backref="state", cascade="delete")
